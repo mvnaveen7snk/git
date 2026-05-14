@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Premium Tech</title>
+    <meta name="description" content="Aura offers the most premium and stunning tech accessories in the world.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="toast" class="toast">Item added to cart</div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AURA</a>
+            <nav class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+            </nav>
+            <button class="nav-cta" onclick="showToast('Browsing cart...')">Cart (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg-blob blob-1"></div>
+            <div class="hero-bg-blob blob-2"></div>
+            <div class="hero-content">
+                <h1 class="hero-title animate-up">Experience<br><span class="gradient-text">Pure Sound</span></h1>
+                <p class="hero-subtitle animate-up delay-1">The next generation of acoustic engineering, wrapped in a breathtaking design.</p>
+                <div class="hero-buttons animate-up delay-2">
+                    <button class="btn btn-primary" onclick="showToast('Aura Pro added to cart')">Shop Now</button>
+                    <button class="btn btn-secondary">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image-container animate-fade delay-3">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2670&auto=format&fit=crop" alt="Premium Headphones" class="hero-image">
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <div class="section-header reveal">
+                <h2>Featured Collection</h2>
+                <p>Discover our meticulously crafted tech</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=2564&auto=format&fit=crop" alt="Aura Watch" class="card-image">
+                        <button class="add-to-cart-btn" onclick="showToast('Aura Watch added to cart')">+</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Aura Watch Pro</h3>
+                        <p class="price">$299.00</p>
+                    </div>
+                </div>
+                <div class="product-card reveal delay-1">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?q=80&w=2574&auto=format&fit=crop" alt="Aura Phone" class="card-image">
+                        <button class="add-to-cart-btn" onclick="showToast('Aura Phone added to cart')">+</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Aura Phone Case</h3>
+                        <p class="price">$49.00</p>
+                    </div>
+                </div>
+                <div class="product-card reveal delay-2">
+                    <div class="card-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=2584&auto=format&fit=crop" alt="Aura Buds" class="card-image">
+                        <button class="add-to-cart-btn" onclick="showToast('Aura Buds added to cart')">+</button>
+                    </div>
+                    <div class="card-info">
+                        <h3>Aura Buds</h3>
+                        <p class="price">$149.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="features-container">
+                <div class="feature-text reveal">
+                    <h2>Design Without<br>Compromise.</h2>
+                    <p>We believe that technology should be an extension of your personality. That's why every Aura product is crafted with premium materials and absolute precision, ensuring an experience like no other.</p>
+                </div>
+                <div class="feature-stats reveal delay-1">
+                    <div class="stat-item">
+                        <span class="stat-number">40h</span>
+                        <span class="stat-label">Battery Life</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">ANC</span>
+                        <span class="stat-label">Noise Canceling</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Hi-Res</span>
+                        <span class="stat-label">Audio Quality</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">AURA</a>
+                <p>Elevating daily tech into functional art.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Shop</h4>
+                    <a href="#">Headphones</a>
+                    <a href="#">Watches</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
