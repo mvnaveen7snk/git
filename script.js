@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     
+console.log("Welcome to the git Playlist");
+for(var i=0;i<5;i++){
+console. log("code io");
+｝
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
